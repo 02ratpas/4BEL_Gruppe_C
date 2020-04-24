@@ -11,7 +11,6 @@ namespace Fork_4BEL_2010
         static void Main(string[] args)
         {
             int Zahl_1 = 0;
-            int Zahl_2 = 0;
             int Auswahl = 0;
             int Ergebnis = 0;
 
@@ -25,10 +24,10 @@ namespace Fork_4BEL_2010
 
 
             if (Auswahl == 1)
-                Ergebnis = Dezimal(Zahl_1, Zahl_2);
+                Ergebnis = Dezimal(Zahl_1);
 
             if (Auswahl == 2)
-                Ergebnis = Hexadezimal(Zahl_1, Zahl_2);
+                Ergebnis = Hexadezimal(Zahl_1);
 
 
             Console.WriteLine("Ergebnis = " + Ergebnis);
@@ -37,7 +36,7 @@ namespace Fork_4BEL_2010
 
 
 
-        static int Dezimal(int Zahl_1, int Zahl_2)
+        static int Dezimal(int Zahl_1)
         {
             int Ergebnis = 0;
 
@@ -45,7 +44,7 @@ namespace Fork_4BEL_2010
 
             return Ergebnis;
         }
-        static int Hexadezimal(int Zahl_1, int Zahl_2)
+        static int Hexadezimal(int Zahl_1)
         {
             int Ergebnis = 0;
 
