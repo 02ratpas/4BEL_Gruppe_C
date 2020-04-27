@@ -10,9 +10,7 @@ namespace Fork_4BEL_2010
     {
         static void Main(string[] args)
         {
-            string str_Zahl_1="1111";
-            string str_Ergebnis="";
-            int Zahl_1 = 0;
+            int Zahl_1 =0 ;
             int Zahl_2 = 0;
             int Auswahl = 0;
             int Ergebnis = 0;
@@ -30,10 +28,13 @@ namespace Fork_4BEL_2010
                 Ergebnis = Dezimal(Zahl_1, Zahl_2);
 
             if (Auswahl == 2)
-                str_Ergebnis = Hexadezimal(str_Zahl_1);
+            {
+                String str_Ergebnis = Hexadezimal(Convert.ToString(Zahl_1));
+                Console.WriteLine("Ergebnis Hexadezimal = " + str_Ergebnis);
+            }
 
 
-            Console.WriteLine("Ergebnis = " + str_Ergebnis);
+            Console.WriteLine("Ergebnis = " + Ergebnis);
             Console.ReadKey();
         }
 
