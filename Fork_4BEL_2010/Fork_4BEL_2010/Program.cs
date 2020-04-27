@@ -21,6 +21,8 @@ namespace Fork_4BEL_2010
 
 
             //Schrötter, zahleneingabe
+            Console.WriteLine("Geben Sie eine Zahl ein: ");
+            Zahl_1 = Convert.ToInt32(Console.ReadLine());
 
 
             if (Auswahl == 1)
