@@ -10,9 +10,9 @@ namespace Fork_4BEL_2010
     {
         static void Main(string[] args)
         {
-            int Zahl_1 = 0;
+            Int32 Zahl_1 = 0;
             int Auswahl = 0;
-            int Ergebnis = 0;
+            Int32 Ergebnis = 0;
 
 
 
@@ -34,16 +34,32 @@ namespace Fork_4BEL_2010
             Console.ReadKey();
         }
 
-
-
-        static int Dezimal(int Zahl_1)
+        //Umwandlung Binär in Dezimal
+        static Int32 Dezimal(Int32 Zahl_1)
         {
-            int Ergebnis = 0;
+            Int32 Ergebnis = 0;
+            int Counter = 0;
+            string StringZahl_1 = "";
 
-            //Pötti, Dezimal Rechnung
+            StringZahl_1 = Convert.ToString(Zahl_1);
+
+            //Umwandlung
+            for (int i = StringZahl_1.Length; i >= 0; i--)
+            {
+                if (StringZahl_1[i] == 1)
+                {
+                    Ergebnis = Convert.ToInt32(Math.Pow(2, Counter));
+                }
+                if (StringZahl_1[i] == 0)
+                {}
+
+                //Erhöhung Counter
+                Counter++;
+            }                    
 
             return Ergebnis;
         }
+
         static int Hexadezimal(int Zahl_1)
         {
             int Ergebnis = 0;
